@@ -1,16 +1,16 @@
-import React from "react";
-import { FcSelfServiceKiosk } from "react-icons/fc";
+import React from "react"
+import Banner from "./Banner"
+import RandomIcon from "./RandomIcon"
 
 const Content = () => {
   return (
-    <div className="w-full h-full">
-      <div className="w-full h-2/5 bg-yellow-500 absolute">
+    <div className='w-full h-full'>
+      <div className=' w-full h-10 bg-yellow-500'>
+        <RandomIcon />
       </div>
-      <div className="flex w-20 h-20 rounded-[50%] bg-slate-800 relative m-2">
-        <FcSelfServiceKiosk className="m-auto text-5xl" />
-      </div>
+      <Banner />
     </div>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content
