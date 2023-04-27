@@ -4,11 +4,13 @@ import RandomIcon from "./RandomIcon"
 
 const Content = () => {
   return (
-    <div className='w-full h-full'>
+    <div className='flex flex-col w-full h-full'>
       <div className=' w-full h-10 bg-yellow-500'>
         <RandomIcon />
       </div>
-      <Banner />
+      <div className='w-full m-auto p-10'>
+        <Banner />
+      </div>
     </div>
   )
 }
