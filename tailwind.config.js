@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 export const content = [
   "./src/pages/**/*.{js,ts,jsx,tsx}",
   "./src/components/**/*.{js,ts,jsx,tsx}",
@@ -14,6 +15,31 @@ export const theme = {
     fontFamily: {
       Amatic: ["Amatic SC", "sans"],
       Pacifico: ["Pacifico", "serief"],
+    },
+    screens: {
+      xs: "350",
+
+      sm: "640px",
+
+      md: "768px",
+
+      lg: "1024px",
+
+      xl: "1280px",
+
+      "2xl": "1536px",
+    },
+    backgroundImage: {
+      bgImage: "url(../../public/bg.png)",
+    },
+    keyframes: {
+      wiggle: {
+        "0%, 100%": { transform: "rotate(-3deg)" },
+        "50%": { transform: "rotate(3deg)" },
+      },
+    },
+    animation: {
+      wiggle: "wiggle 3s ease-in-out infinite",
     },
   },
 }
