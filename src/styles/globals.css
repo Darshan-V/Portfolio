@@ -28,9 +28,3 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
-@layer base {
-  @font-face {
-    font-family: "Amatic";
-  }
-}
