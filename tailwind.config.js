@@ -15,6 +15,7 @@ export const theme = {
     fontFamily: {
       Amatic: ["Amatic SC", "sans"],
       Pacifico: ["Pacifico", "serief"],
+      Neucha: ["Neucha", "mono"],
     },
     screens: {
       xs: "350",
