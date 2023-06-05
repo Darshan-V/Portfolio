@@ -3,6 +3,7 @@ import Banner from "./Banner"
 import RandomIcon from "./RandomIcon"
 import Link from "next/link"
 import { TiThMenu } from "react-icons/ti"
+import PopoverDemo from "./Popover"
 
 const Content = () => {
   const buttonArray = ["Home", "About", "Skills", "Contact"]
@@ -12,7 +13,7 @@ const Content = () => {
       <div className='flex flex-row-reverse w-full h-10 bg-yellow-600'>
         <RandomIcon />
         <div className='flex md:hidden absolute px-3 h-10 items-center hover:bg-yellow-500 cursor-pointer'>
-          <TiThMenu className='text-slate-600 text-2xl' />
+          <PopoverDemo />
         </div>
         <div className='hidden md:flex absolute h-10 justify-between px-3 space-x-4 '>
           {buttonArray.map((str, i) => (
