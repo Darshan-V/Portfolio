@@ -4,7 +4,7 @@ import Image from "next/image"
 const BackgroundImage = () => {
   return (
     <>
-      <div className='flex justify-center items-center w-56 h-56 rounded-[50%] hover:animate-pulse bg-gradient-to-b from-slate-700 shadow-[#8a8989] shadow-inner'>
+      <div className='flex justify-center items-center rounded-[50%] hover:animate-pulse bg-gradient-to-b from-slate-700 shadow-[#8a8989] shadow-inner'>
         <Image
           src='/bg.png'
           alt='bg'
