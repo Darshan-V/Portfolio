@@ -29,6 +29,8 @@ export const theme = {
       xl: "1280px",
 
       "2xl": "1536px",
+
+      moblie: "360px",
     },
     backgroundImage: {
       bgImage: "url(../../public/bg.png)",
