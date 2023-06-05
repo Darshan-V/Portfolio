@@ -20,7 +20,7 @@ const Banner = () => {
           A Web Developer!
         </p>
       </div>
-      <div className='hidden md:flex relative md:w-1/2 justify-center '>
+      <div className='hidden md:flex relative md:w-1/2 justify-center h-full '>
         <BackgroundImage />
       </div>
       <div className='flex md:hidden w-1/2 h-full relative items-center  '>
