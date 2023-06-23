@@ -1,92 +1,45 @@
 import React from "react"
 import * as Popover from "@radix-ui/react-popover"
-import { MixerHorizontalIcon, Cross2Icon } from "@radix-ui/react-icons"
+import { BsListNested } from "react-icons/bs"
+import Link from "next/link"
 
-const PopoverDemo = () => (
+const buttonArray = ["Home", "About", "Skills", "Contact"]
+
+const PopOver = () => (
   <Popover.Root>
     <Popover.Trigger asChild>
-      <button
-        className='IconButton'
-        aria-label='Update dimensions'
-      >
-        <MixerHorizontalIcon />
+      <button className='text-black'>
+        <BsListNested className='text-xl' />
       </button>
     </Popover.Trigger>
     <Popover.Portal>
       <Popover.Content
-        className='PopoverContent'
+        className='bg-gradient-to-tr from-slate-600 h-screen'
         sideOffset={5}
       >
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
-          <p
-            className='Text'
-            style={{ marginBottom: 10 }}
-          >
-            Dimensions
-          </p>
-          <fieldset className='Fieldset'>
-            <label
-              className='Label'
-              htmlFor='width'
-            >
-              Width
-            </label>
-            <input
-              className='Input'
-              id='width'
-              defaultValue='100%'
-            />
-          </fieldset>
-          <fieldset className='Fieldset'>
-            <label
-              className='Label'
-              htmlFor='maxWidth'
-            >
-              Max. width
-            </label>
-            <input
-              className='Input'
-              id='maxWidth'
-              defaultValue='300px'
-            />
-          </fieldset>
-          <fieldset className='Fieldset'>
-            <label
-              className='Label'
-              htmlFor='height'
-            >
-              Height
-            </label>
-            <input
-              className='Input'
-              id='height'
-              defaultValue='25px'
-            />
-          </fieldset>
-          <fieldset className='Fieldset'>
-            <label
-              className='Label'
-              htmlFor='maxHeight'
-            >
-              Max. height
-            </label>
-            <input
-              className='Input'
-              id='maxHeight'
-              defaultValue='none'
-            />
+        <div className='flex md:hidden flex-col gap-y-5 bg-gradient-to-b from-slate-600 w-20 h-2/3 '>
+          <fieldset className=' w-full flex flex-col gap-y-5 pt-3 rounded-sm'>
+            {buttonArray.map((str, i) => (
+              <Link
+                href={`/${str.toLowerCase()}`}
+                className=' font-Neucha font-thin text-xl hover:scale-125 m-auto'
+                key={i}
+              >
+                <Popover.Close
+                  className='PopoverClose'
+                  aria-label='Close'
+                >
+                  {str}
+                </Popover.Close>
+              </Link>
+            ))}
           </fieldset>
         </div>
-        <Popover.Close
-          className='PopoverClose'
-          aria-label='Close'
-        >
-          <Cross2Icon />
-        </Popover.Close>
-        <Popover.Arrow className='PopoverArrow' />
+
+        <Popover.Arrow className='hidden' />
       </Popover.Content>
     </Popover.Portal>
   </Popover.Root>
 )
 
-export default PopoverDemo
+export default PopOver
