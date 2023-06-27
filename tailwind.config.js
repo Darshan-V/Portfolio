@@ -11,6 +11,10 @@ export const theme = {
       Amatic: ["Amatic SC", "sans"],
       Pacifico: ["Pacifico", "serief"],
       Neucha: ["Neucha", "mono"],
+      Handlee: ["Handlee", "mono"],
+      Sriracha: ["Sriracha", "sans"],
+      Sigmarone: ["Sigmar One", "sans"],
+      Flamenco: ["Flamenco", "serief"],
     },
     screens: {
       xs: "350",
