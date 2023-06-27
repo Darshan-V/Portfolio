@@ -10,11 +10,11 @@ const Banner = () => {
         </p>
         <span className=' font-Amatic md:text-xl lg:text-2xl xl-text:3xl 2xl:text-4xl gap-y-2'>
           I'm &nbsp;
-          <p className=' bg-slate-600 rounded-md px-2 font-bold w-fit'>
+          <p className=' bg-slate-600 rounded-md px-2 font-bold w-fit md:tracking-widest '>
             Darshan Vijaykumar,
           </p>
         </span>
-        <p className=' font-Amatic  md:text-2xl lg:text-3xl xl-text:4xl 2xl:text-4xl first-letter:text-5xl first-letter:font-bold first-letter:text-red-500 bg-slate-600 rounded-lg w-fit px-2 animate-pulse'>
+        <p className=' font-Amatic  md:text-2xl lg:text-3xl xl-text:4xl 2xl:text-4xl first-letter:text-5xl first-letter:font-bold first-letter:text-red-500 bg-slate-600 rounded-lg w-fit px-2 animate-pulse tracking-wide'>
           A Web Developer!
         </p>
       </div>
