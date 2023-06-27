@@ -22,7 +22,7 @@ const PopOver = () => (
             {buttonArray.map((str, i) => (
               <Link
                 href={`/${str.toLowerCase()}`}
-                className=' font-Neucha font-thin text-xl hover:scale-125 m-auto'
+                className=' font-Handlee font-thin text-xl hover:scale-125 m-auto'
                 key={i}
               >
                 <Popover.Close

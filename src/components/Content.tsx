@@ -9,7 +9,7 @@ const Content = () => {
       <div className='flex w-screen p-10'>
         <Banner />
       </div>
-      <div className=' flex w-screen md:flex-row flex-col px-10 h-full'>
+      <div className=' flex w-screen md:flex-row flex-col px-5 h-full'>
         <MoreMe />
         <SomemoreStuff />
       </div>

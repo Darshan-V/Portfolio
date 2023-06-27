@@ -1,6 +1,5 @@
 import React from "react"
 import PopOver from "./Popover"
-import RandomIcon from "./RandomIcon"
 import Link from "next/link"
 
 const buttonArray = ["Home", "About", "Skills", "Contact"]
@@ -9,7 +8,6 @@ const Navigate = () => {
   return (
     <>
       <div className='flex flex-row-reverse w-full h-10 bg-yellow-600'>
-        <RandomIcon />
         <div className='flex md:hidden absolute px-3 h-10 items-center hover:bg-yellow-500 cursor-pointer '>
           <PopOver />
         </div>
@@ -17,7 +15,7 @@ const Navigate = () => {
           {buttonArray.map((str, i) => (
             <Link
               href={`/${str.toLowerCase()}`}
-              className=' font-Neucha font-thin text-xl hover:scale-125 m-auto'
+              className=' font-Handlee font-semibold text-black text-xl hover:scale-125 m-auto'
               key={i}
             >
               {str}

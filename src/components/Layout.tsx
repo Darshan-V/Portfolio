@@ -8,7 +8,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <Navbar />
       <Navigate />
       <main>{children}</main>
-      <div className='fixed bottom-0 w-full'></div>
+      <div className='fixed bottom-0 w-full'>
+        <Footer />
+      </div>
     </>
   )
 }
