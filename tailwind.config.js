@@ -31,6 +31,7 @@ export const theme = {
     },
     backgroundImage: {
       bgImage: "url(../../public/bg.png)",
+      pattern: "url(../../public/pinkwave.png)",
     },
     keyframes: {
       wiggle: {
