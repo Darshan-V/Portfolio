@@ -2,7 +2,7 @@ import React from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 const Footer = () => {
   return (
-    <div className=' bg-black mx-2 '>
+    <div className=' bg-black mx-2 p-2 '>
       <hr className='border border-none bg-[#9B9C9D] h-[1px] w-full' />
       <div className='flex items-center py-2 w-full m-auto '>
         <div className='flex w-1/2 justify-start items-center px-5 md:text-xl text-[#9B9C9D] mr-auto'>

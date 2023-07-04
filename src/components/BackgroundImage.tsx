@@ -10,11 +10,11 @@ const BackgroundImage = () => {
         className='flex justify-center items-center rounded-[50%] hover:animate-pulse bg-gradient-to-b from-slate-700 shadow-[#8a8989] shadow-inner w-fit h-fit'
       >
         <Image
-          src='/bg.png'
+          src='/letter-d-final.svg'
           alt='bg'
           width='200'
           height='200'
-          className='rounded-[50%] hover:animate-none'
+          className='rounded-[50%] hover:animate-none hover:animate-bounce'
         />
       </AspectRatio.Root>
     </>
