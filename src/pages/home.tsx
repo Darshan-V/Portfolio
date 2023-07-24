@@ -1,10 +1,13 @@
 import React from "react"
-import Content from "@/components/Content"
+import Layout from "./Layout"
 
 const index = () => {
   return (
-    <div className='xs:w-screen sm:w-screen md:w-screen lg:w-screen xl:w-screen 2xl:w-screen'>
-      <Content />
+    <div
+      className='w-screen overflow-hidden'
+      id='home'
+    >
+      <Layout />
     </div>
   )
 }
