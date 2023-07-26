@@ -48,10 +48,16 @@ export const theme = {
         "60%": { transform: "rotate(0.0deg)" },
         "100%": { transform: "rotate(0.0deg)" },
       },
+      "slow-spin": {
+        from: {
+          transform: "rotate(360deg)",
+        },
+      },
     },
     animation: {
       wiggle: "wiggle 3s ease-in-out infinite",
       waving: "wave 2s linear infinite",
+      "slow-spin": " slow-spin 3s linear infinite",
     },
   },
 }
