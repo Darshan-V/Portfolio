@@ -1,9 +1,11 @@
+/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from "react"
 import BackgroundImage from "./BackgroundImage"
 
 const Banner = () => {
   return (
-    <div className='flex flex-auto h-fit mt-5 rounded-xl p-5 bg-gradient-to-b from-slate-700 justify-between mix-blend-lighten w-full'>
+    <div className='flex flex-auto h-fit mt-5  p-5 bg-gradient-to-b from-slate-700 justify-between mix-blend-lighten w-full'>
       <div className='flex flex-col w-full text-2xl gap-y-2 '>
         <p className=' font-Pacifico  md:text-2xl lg:text-4xl xl-text:5xl 2xl:text-6xl text-slate-400 w-fit'>
           Hello,

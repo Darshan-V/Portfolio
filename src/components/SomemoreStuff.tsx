@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React, { useState } from "react"
 
 const SomemoreStuff = () => {
@@ -8,8 +9,8 @@ const SomemoreStuff = () => {
   }
   return (
     <div className='flex flex-col md:w-1/2 w-full h-full p-5  '>
-      <div className='before:block before:absolute before:-inset-1 before:-skew-y-1 before:bg-yellow-600 relative inline-block md:text-3xl text-lg font-Sigmarone text-center w-fit'>
-        <span className='relative text-white/75 px-2'>
+      <div className=' bg-yellow-600  md:text-3xl text-xl font-Sigmarone text-center w-fit'>
+        <span className=' text-white/75 px-2'>
           Creative Web Developer based in India
         </span>
       </div>
@@ -19,8 +20,10 @@ const SomemoreStuff = () => {
           onClick={toggleReadMore}
         >
           <p
-            className={`md:line-clamp-none overflow-hidden ${
-              isExpanded ? "line-clamp-none" : "line-clamp-2"
+            className={`lg:line-clamp-none overflow-hidden md:line-clamp-none ${
+              isExpanded
+                ? "line-clamp-none"
+                : "line-clamp-2 bg-gradient-to-b from-slate-900"
             }`}
           >
             I'm web developer, I'm very Passionate and dedicated to my work.

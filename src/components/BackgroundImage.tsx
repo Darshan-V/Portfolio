@@ -1,22 +1,25 @@
 import React from "react"
 import Image from "next/image"
-import * as AspectRatio from "@radix-ui/react-aspect-ratio"
 
 const BackgroundImage = () => {
   return (
     <>
-      <AspectRatio.Root
-        ratio={16 / 6}
-        className='flex justify-center items-center rounded-[50%] group bg-gradient-to-b from-slate-700 shadow-[#8a8989] shadow-inner w-fit h-fit'
-      >
+      <div className='flex justify-center items-center rounded-full w-fit h-fit'>
         <Image
-          src='/letter-d-final.svg'
+          src='/caliper-removebg.png'
           alt='bg'
-          width='200'
-          height='200'
-          className='rounded-[50%] hover:animate-none  group-hover:animate-[bounce_2s_ease-in-out_infinite]'
+          width='190'
+          height='190'
+          className='rounded-full bg-transparent absolute mix-blend-overlay '
         />
-      </AspectRatio.Root>
+        <Image
+          src='/newwheelbg.png'
+          alt='bg'
+          width='280'
+          height='280'
+          className='rounded-full  relative animate-slow-spin mix-blend-duplex '
+        />
+      </div>
     </>
   )
 }
