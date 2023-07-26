@@ -3,9 +3,12 @@ import Layout from "./Layout"
 
 const index = () => {
   return (
-    <div id='about'>
+    <section
+      id='about'
+      className='w-screen h-screen '
+    >
       <Layout />
-    </div>
+    </section>
   )
 }
 

@@ -1,7 +1,12 @@
 import React from "react"
 
 const index = () => {
-  return <div></div>
+  return (
+    <section
+      id='skills'
+      className='w-screen h-screen'
+    ></section>
+  )
 }
 
 export default index

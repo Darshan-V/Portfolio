@@ -54,7 +54,6 @@ const ContactBox = () => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     setIsValidEmail(emailPattern.test(value))
   }
-  console.log(emailSent)
 
   return (
     <>

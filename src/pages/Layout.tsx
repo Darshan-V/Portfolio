@@ -6,12 +6,12 @@ import Contact from "./contact"
 
 const Layout = () => {
   return (
-    <>
+    <div>
       <Content />
       <About />
       <Skills />
       <Contact />
-    </>
+    </div>
   )
 }
 

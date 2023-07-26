@@ -3,12 +3,12 @@ import Layout from "./Layout"
 
 const index = () => {
   return (
-    <div
-      className='w-screen overflow-hidden'
+    <section
+      className='w-screen  overflow-hidden '
       id='home'
     >
       <Layout />
-    </div>
+    </section>
   )
 }
 
